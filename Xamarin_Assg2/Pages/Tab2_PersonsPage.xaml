@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:Xamarin_Assg2.ViewModels"
+             mc:Ignorable="d"
+             x:Class="Xamarin_Assg2.Pages.Tab2_PersonsPage">
+
+    <ContentPage.BindingContext>
+        <vm:PersonViewModel/>
+    </ContentPage.BindingContext>
+
+    <ListView x:Name="PersonView"  HasUnevenRows="True" ItemsSource ="{Binding Persons}" >
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Grid >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.RowSpan="3"
+                            Source="{Binding Image}"
+                            Aspect="AspectFit"
+                            HeightRequest="100"
+                            WidthRequest="80"
+                            Margin="8"/>
+                        <Label Grid.Row="0"
+                           Grid.Column="1"
+                           Text="{Binding Name}"
+                           Margin="10"/>
+                        <Label Grid.Row="1"
+                           Grid.Column="1"
+                           Text="{Binding Email}"
+                           Margin="10"/>
+                        <Label x:Name="phone" Grid.Row="2"
+                           Grid.Column="1"
+                           Text="{Binding GSM}"
+                           Margin="10"/>
+
+                        <Button Text="Call" CommandParameter="{Binding GSM}" Clicked="CallBtnClicked"/>
+                        
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

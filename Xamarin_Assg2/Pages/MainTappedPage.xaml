@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            xmlns:pages="clr-namespace:Xamarin_Assg2.Pages"
+            mc:Ignorable="d"
+             x:Class="Xamarin_Assg2.Pages.MainTappedPage">
+  <!--Pages can be added as references or inline-->
+    <pages:Tab1_AboutPage BackgroundColor="AliceBlue" Title="Hakkında" />
+    <pages:Tab2_PersonsPage BackgroundColor="AliceBlue" Title="Kişiler"/>
+    <pages:Tab3_InfrastructurePage BackgroundColor="AliceBlue" Title="Altyapı"/>
+    <pages:Tab4_CoursesPage BackgroundColor="AliceBlue" Title="Dersler"/>
+</TabbedPage>

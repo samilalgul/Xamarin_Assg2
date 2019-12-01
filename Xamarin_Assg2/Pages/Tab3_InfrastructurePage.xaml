@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Xamarin_Assg2.Pages.Tab3_InfrastructurePage">
+    <ScrollView Orientation="Vertical">
+        <StackLayout Orientation="Vertical">
+            <StackLayout Orientation="Horizontal">
+                <StackLayout Orientation="Vertical">
+                    <Label Text="B1"/>
+                    <Label Text="Kapasite:36"/>
+                </StackLayout>
+                <Image Source="Class_B1.jpg" HorizontalOptions="EndAndExpand" WidthRequest="50" HeightRequest="50">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped = "image1Tapped" NumberOfTapsRequired="2"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout Orientation="Vertical">
+                    <Label Text="B2"/>
+                    <Label Text="Kapasite:36"/>
+                </StackLayout>
+                <Image Source="Class_B2.jpg" HorizontalOptions="EndAndExpand" WidthRequest="50" HeightRequest="50">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped = "image2Tapped" NumberOfTapsRequired="2"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout Orientation="Vertical">
+                    <Label Text="B3"/>
+                    <Label Text="Kapasite:36"/>
+                </StackLayout>
+                <Image Source="Class_B3.jpg" HorizontalOptions="EndAndExpand" WidthRequest="50" HeightRequest="50">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped = "image3Tapped" NumberOfTapsRequired="2"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout Orientation="Vertical">
+                    <Label Text="B4"/>
+                    <Label Text="Kapasite:36"/>
+                </StackLayout>
+                <Image Source="Class_B4.jpg" HorizontalOptions="EndAndExpand" WidthRequest="50" HeightRequest="50">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped = "image4Tapped" NumberOfTapsRequired="2"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout Orientation="Vertical">
+                    <Label Text="B6"/>
+                    <Label Text="Kapasite:36"/>
+                </StackLayout>
+                <Image Source="Class_B6.jpg" HorizontalOptions="EndAndExpand" WidthRequest="50" HeightRequest="50">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped = "image6Tapped" NumberOfTapsRequired="2"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout Orientation="Vertical">
+                    <Label Text="B7"/>
+                    <Label Text="Kapasite:36"/>
+                </StackLayout>
+                <Image Source="Class_B7.jpg" HorizontalOptions="EndAndExpand" WidthRequest="50" HeightRequest="50">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped = "image7Tapped" NumberOfTapsRequired="2"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
